@@ -73,14 +73,14 @@ table th {
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
-  --color-bf4800:  #ededed;
+  --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
   --color-872341: #872341;
   --color-F4BF96: #f4bf96;
-  --color-CE5A67: #018846;
+  --color-CE5A67: #ce5a67;
 }
 
 .error {
@@ -181,11 +181,11 @@ a {
 /* Header Part */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
-  background-color:  #008000;
+  background-color: black;
 }
 
 .header-upper {
-  background-color:  #008000;
+  background-color: black;
   height: 100px;
 }
 .header-upper .input-group-text {

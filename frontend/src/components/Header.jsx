@@ -1,13 +1,13 @@
-import { Badge, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { FaShoppingCart, FaUser } from 'react-icons/fa';
-import { useDispatch, useSelector } from 'react-redux';
+import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
+import { FaShoppingCart, FaUser, FaTachometerAlt } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
-import goMartLogo from '../images/Go Mart.png';
-import { logout } from '../slices/authSlice';
-import { resetCart } from '../slices/cartSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/usersApiSlice';
+import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
+import { resetCart } from '../slices/cartSlice';
+
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
@@ -59,9 +59,9 @@ const Header = () => {
                 <h3>
                   <Link to='/' className='text-white mt-2'>
                     <img
-                      width={300}
-                      src={goMartLogo}
-                    />
+                      width={200}
+                      src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713680477/tlipstick-high-resolution-logo-transparent_1_xbdy4q.png'
+                    ></img>
                   </Link>
                 </h3>
               </Navbar.Brand>
@@ -74,17 +74,17 @@ const Header = () => {
                 </div>
                 <Nav className='d-flex align-items-center me-2'>
                   <LinkContainer to='/cart'>
-                    <Nav.Link style={{ color: '#f8f9fa !important' }}>
+                    <Nav.Link>
                       <FaShoppingCart style={{ fontSize: '1.5em' }} className='me-1' /> Giỏ Hàng
                       {cartItems.length > 0 && (
-                        <Badge pill bg='danger' style={{ marginLeft: '5px', fontSize: "12px" }}>
+                        <Badge pill bg='danger' style={{ marginLeft: '5px', fontSize:"12px" }}>
                           {cartItems.reduce((a, c) => a + c.qty, 0)}
-
+                          
                         </Badge>
                       )}
                     </Nav.Link>
                   </LinkContainer>
-                </Nav >
+                </Nav>
 
                 {userInfo ? (
                   <>
@@ -92,7 +92,7 @@ const Header = () => {
                       <NavDropdown
                         title={
                           <>
-                            <FaUser style={{ fontSize: '1.3em' }} className='me-1' />
+                            <FaUser style={{ fontSize: '1.3em' }} className='me-1'/>
                             {userInfo.name}
                           </>
                         }
@@ -108,8 +108,8 @@ const Header = () => {
                     </Nav>
                   </>
                 ) : (
-                  <LinkContainer to='/login' style={{ marginTop: "3px" }}>
-                    <Nav.Link style={{ color: '#f8f9fa !important' }}>
+                  <LinkContainer to='/login' style={{marginTop: "3px"}}>
+                    <Nav.Link >
                       <FaUser style={{ fontSize: '1.3em' }} className='me-1' /> Đăng nhập
                     </Nav.Link>
                   </LinkContainer>

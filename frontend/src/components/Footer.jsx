@@ -1,6 +1,6 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { BsFacebook, BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
 
 const Footer = () => {
@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto">
-              <h5 className="text-uppercase fw-bold text-white">GO MART</h5>
+              <h5 className="text-uppercase fw-bold text-white">TLIPSTICK</h5>
               <hr />
               <p className="text-white">
                 Mang đến cho bạn những thỏi son xinh đẹp, chất lượng với giá
@@ -89,13 +89,13 @@ const Footer = () => {
                   href="tel:+84 946053795"
                   className="mt-3 d-block mb-1 text-white"
                 >
-                  +84 12345678
+                  +84 946053795
                 </a>
                 <a
                   href="mailto:ttech@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
-                  gomart@gmail.com
+                  tlipstick@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
                   <a className="text-white" href="/">

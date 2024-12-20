@@ -14,12 +14,7 @@ import Container from '../components/Container';
 import { services } from '../utils/Data';
 import Marquee from 'react-fast-marquee';
 import { useEffect } from 'react';
-import category1 from '../images/slide/category1.jpg';
-import bg_1 from '../images/slide/bg_1.jpg';
-import bg_2 from '../images/slide/bg_2.jpg';
-import bg_3 from '../images/slide/bg_3.jpg';
-import bg_4 from '../images/slide/bg_4.jpg';
-import qc1 from '../images/slide/qc1.jpg';
+
 const HomeScreen = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,7 +49,7 @@ const HomeScreen = () => {
           <div className='col-6'>
             <div className='main-banner position-relative'>
               <img
-                src={category1}
+                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104746/main-banner-1_twci07.jpg'
                 className='img-fluid rounded-3'
                 alt='main banner'
               />
@@ -72,57 +67,57 @@ const HomeScreen = () => {
             <div className='d-flex flex-wrap gap-10 justify-content-between align items-center'>
               <div className='small-banner position-relative'>
                 <img
-                  src={bg_1}
+                  src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104711/catbanner-01_zm3igl.jpg'
                   className='img-fluid rounded-3'
                   alt='main banner'
                 />
-                {/* <div className='small-banner-content position-absolute'>
+                <div className='small-banner-content position-absolute'>
                   <h4>ƯU ĐÃI TỐT NHẤT</h4>
                   <h5>
-                    <em>Rau Củ</em>
+                    <em>innisfree</em>
                   </h5>
                   <p>Đa dạng màu sắc</p>
-                </div> */}
+                </div>
               </div>
               <div className='small-banner position-relative'>
                 <img
-                  src={bg_2}
+                  src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104712/catbanner-02_bl2hzx.jpg'
                   className='img-fluid rounded-3'
                   alt='main banner'
                 />
-                {/* <div className='small-banner-content position-absolute'>
+                <div className='small-banner-content position-absolute'>
                   <h4>SẢN PHẨM MỚI</h4>
-                  <h5>Trái Cây</h5>
+                  <h5>M.A.C</h5>
                   <p>Thương hiệu hàng đầu</p>
-                </div> */}
+                </div>
               </div>
               <div className='small-banner position-relative'>
                 <img
-                  src={bg_3}
+                  src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104714/catbanner-03_jadrev.jpg'
                   className='img-fluid rounded-3'
                   alt='main banner'
                 />
-                {/* <div className='small-banner-content position-absolute'>
+                <div className='small-banner-content position-absolute'>
                   <h4>MUA LIỀN TAY</h4>
-                  <h5>Rau </h5>
+                  <h5>3CE</h5>
                   <p>
                     Mua ngay các <br /> màu sắc mới nhất
                   </p>
-                </div> */}
+                </div>
               </div>
               <div className='small-banner position-relative'>
                 <img
-                  src={bg_4}
+                  src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104716/catbanner-04_m1lc6o.jpg'
                   className='img-fluid rounded-3'
                   alt='main banner'
                 />
-                {/* <div className='small-banner-content position-absolute'>
+                <div className='small-banner-content position-absolute'>
                   <h4>VẬN CHUYỂN NHANH</h4>
-                  <h5>Chế Biến Sẵn</h5>
+                  <h5>Bbia</h5>
                   <p>
                     Chất son cực mịn <br /> mượt mà trên môi
                   </p>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -244,21 +239,21 @@ const HomeScreen = () => {
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src={qc1}
+                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104724/famous-01_vn6v9s.jpg'
                 className='img-fluid'
                 alt='famous'
               />
               <div className='famous-content position-absolute'>
-                <h5 className='text-black' >ĐA DẠNG MẪU MÃ</h5>
-                <h6 className='text-black'>Sản Phẩm </h6>
-                <p className='text-black'>Giá chỉ từ 150.000</p>
+                <h5>ĐA DẠNG MẪU MÃ</h5>
+                <h6>Son Tint Bóng</h6>
+                <p>Giá chỉ từ 150.000</p>
               </div>
             </div>
           </div>
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src={qc1}
+                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104725/famous-02_afoe9z.jpg'
                 className='img-fluid'
                 alt='famous'
               />
@@ -272,7 +267,7 @@ const HomeScreen = () => {
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src={qc1}
+                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104727/famous-03_cpd3tr.jpg'
                 className='img-fluid'
                 alt='famous'
               />
@@ -286,13 +281,13 @@ const HomeScreen = () => {
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src={qc1}
+                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104729/famous-04_lazymg.jpg'
                 className='img-fluid'
                 alt='famous'
               />
               <div className='famous-content position-absolute'>
                 <h5 className='text-black'>Mua ngay hôm nay</h5>
-                <h6 className='text-black'>Chất Lượng </h6>
+                <h6 className='text-black'>Chất Son Khác Nhau</h6>
                 <p className='text-black'>Mang nhiều màu sắc</p>
               </div>
             </div>
