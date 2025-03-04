@@ -1,20 +1,20 @@
-import { Row, Col } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
-import { useGetProductsQuery } from '../slices/productsApiSlice';
-import { useGetBlogsQuery } from '../slices/blogsApiSlice';
-import { Link } from 'react-router-dom';
-import Product from '../components/Product';
+import { Col, Row } from 'react-bootstrap';
+import { Link, useParams } from 'react-router-dom';
 import Blog from '../components/Blog';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
+import Product from '../components/Product';
+import { useGetBlogsQuery } from '../slices/blogsApiSlice';
+import { useGetProductsQuery } from '../slices/productsApiSlice';
 // import ProductCarousel from '../components/ProductCarousel';
-import Meta from '../components/Meta';
-import Container from '../components/Container';
-import { services } from '../utils/Data';
-import Marquee from 'react-fast-marquee';
 import { useEffect } from 'react';
-
+import Marquee from 'react-fast-marquee';
+import Container from '../components/Container';
+import Meta from '../components/Meta';
+import img1 from '../images/banner.png';
+import img2 from '../images/img2.png';
+import { services } from '../utils/Data';
 const HomeScreen = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -176,55 +176,55 @@ const HomeScreen = () => {
               <Marquee className='d-flex'>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104581/brand-01_x8rua9.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/2-8a7a3474-ecb3-4b18-9e34-950adee48a16.jpg?v=1655462139530'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104582/brand-02_x0ah0g.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/17-0fb6e76f-77af-4900-a510-39726c0ae8d8.png?v=1728470711133'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104584/brand-03_ldtttt.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/20-74ec2f75-5527-413d-a907-0543f591b695.jpg?v=1728642751660'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104662/brand-04_oprgab.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/13-6a7a5cd1-28a6-4052-a2e3-df1538cc62e4.png?v=1728534020283'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104700/brand-05_s5i5r7.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/img-2688.jpg?v=1690002944833'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104701/brand-06_ocevx3.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/1-cd729131-3fd9-49a4-9847-3eb892917954.jpg?v=1655461519780'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104703/brand-07_ucayta.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/13-6a7a5cd1-28a6-4052-a2e3-df1538cc62e4.png?v=1728534020283'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104705/brand-08_cnakv9.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/4-jpeg-d73c58f2-813b-4f36-b4e5-1a07d8afce9d.jpg?v=1700016936747'
                     alt='brand'
                   />
                 </div>
                 <div className='mx-4 w-25'>
                   <img
-                    src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104707/brand-09_zne1sq.jpg'
+                    src='https://bizweb.dktcdn.net/thumb/compact/100/348/234/products/img-2688.jpg?v=1690002944833'
                     alt='brand'
                   />
                 </div>
@@ -239,29 +239,30 @@ const HomeScreen = () => {
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104724/famous-01_vn6v9s.jpg'
+                src={img1}
                 className='img-fluid'
                 alt='famous'
               />
-              <div className='famous-content position-absolute'>
+
+              {/* <div className='famous-content position-absolute'>
                 <h5>ĐA DẠNG MẪU MÃ</h5>
                 <h6>Son Tint Bóng</h6>
                 <p>Giá chỉ từ 150.000</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104725/famous-02_afoe9z.jpg'
+                src={img2}
                 className='img-fluid'
                 alt='famous'
               />
-              <div className='famous-content position-absolute content'>
+              {/* <div className='famous-content position-absolute content'>
                 <h5 className='text-black'>Màu Sắc Tươi Tắn</h5>
                 <h6 className='text-black'>Cực Mướt Trên Môi</h6>
                 <p className='text-black'>Bộ sưu tập mới nhất từ 3CE</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-3'>

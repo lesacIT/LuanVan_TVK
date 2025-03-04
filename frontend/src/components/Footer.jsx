@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto">
-              <h5 className="text-uppercase fw-bold text-white">TLIPSTICK</h5>
+              <h5 className="text-uppercase fw-bold text-white">Khỏe Handmade </h5>
               <hr />
               <p className="text-white">
                 Mang đến cho bạn những thỏi son xinh đẹp, chất lượng với giá
@@ -95,7 +95,7 @@ const Footer = () => {
                   href="mailto:ttech@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
-                  tlipstick@gmail.com
+                  KhoeHandmade@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
                   <a className="text-white" href="/">

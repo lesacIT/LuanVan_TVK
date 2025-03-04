@@ -80,7 +80,7 @@ table th {
   --color-1c1c1b: #1c1c1b;
   --color-872341: #872341;
   --color-F4BF96: #f4bf96;
-  --color-CE5A67: #ce5a67;
+  --color-CE5A67: #f9a92e;
 }
 
 .error {
@@ -141,7 +141,7 @@ a {
 }
 
 .button {
-  background-color: black;
+  background-color: #f8b755;
   color: white;
   font-size: 14px;
   padding: 13px 33px;
@@ -175,7 +175,7 @@ a {
 }
 
 .header-upper {
-  background-color: rgb(95, 29, 40);
+  background-color: #f9a92e;
   height: 62px;
 }
 .header-upper .input-group-text {
@@ -1128,13 +1128,13 @@ footer .input-group-text {
 
 .active {
   background-color: rgb(244, 205, 205) !important;
-  color: rgb(95, 29, 40) !important; /* Đổi màu chữ nếu cần */
+  color: #f9a92e!important; /* Đổi màu chữ nếu cần */
 }
 
 .ant-menu-item.ant-menu-item-active,
 .ant-menu-item.ant-menu-item-selected {
   background-color: rgb(244, 205, 205) !important;
-  color: rgb(95, 29, 40) !important; /* Đổi màu chữ nếu cần */
+  color: #f9a92e!important; /* Đổi màu chữ nếu cần */
 }
 
 .ant-menu-item.ant-menu-item-active:hover {
@@ -1143,7 +1143,7 @@ footer .input-group-text {
 }
 
 .ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
-  background-color: rgb(95, 29, 40) !important;
+  background-color: #f9a92e!important;
   color: white !important;
 }
 
@@ -1168,7 +1168,7 @@ th {
 
 .details {
   background-color: rgb(244, 205, 205) !important;
-  color: rgb(95, 29, 40) !important; /* Đổi màu chữ nếu cần */
+  color: #f9a92e!important; /* Đổi màu chữ nếu cần */
 }
 
 td:hover {
@@ -1205,7 +1205,7 @@ td:hover {
 
 .icon-container:hover {
   /* Định nghĩa màu khi hover */
-  color: rgb(95, 29, 40);
+  color: #f9a92e;
 }
 
 .pagination {
@@ -1237,7 +1237,7 @@ td:hover {
 
 .totalOrdTime {
   background-color: rgb(244, 205, 205);
-  color: rgb(95, 29, 40) !important;
+  color: #f9a92e!important;
   border-radius: 10px;
 }
 
@@ -1249,7 +1249,7 @@ td:hover {
 
 .totalRevenueTime {
   background-color: rgb(244, 205, 205);
-  color: rgb(95, 29, 40) !important;
+  color: #f9a92e!important;
   border-radius: 10px;
 }
 
@@ -1266,7 +1266,7 @@ td:hover {
 }
 
 .bestselling {
-  background-color: rgb(95, 29, 40);
+  background-color:#f9a92e;
   color: white !important;
   border-radius: 10px;
 }

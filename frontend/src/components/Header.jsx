@@ -1,12 +1,13 @@
-import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
-import { FaShoppingCart, FaUser, FaTachometerAlt } from 'react-icons/fa';
+import { Badge, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
-import { useLogoutMutation } from '../slices/usersApiSlice';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import logo from '../images/logo_cn2.png';
 import { logout } from '../slices/authSlice';
-import SearchBox from './SearchBox';
 import { resetCart } from '../slices/cartSlice';
+import { useLogoutMutation } from '../slices/usersApiSlice';
+import SearchBox from './SearchBox';
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -36,14 +37,14 @@ const Header = () => {
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-6'>
-              <p className='text-white mb-0'>
+              <p className='text-black mb-0'>
                 Miễn phí vận chuyển và thanh toán trực tiếp
               </p>
             </div>
             <div className='col-6'>
-              <p className='text-end text-white mb-0'>
+              <p className='text-end text-black mb-0'>
                 Hotline:{' '}
-                <a className='text-white' href='tel:+84 946053795'>
+                <a className='text-black' href='tel:+84 946053795'>
                   +84 946053795
                 </a>
               </p>
@@ -58,10 +59,7 @@ const Header = () => {
               <Navbar.Brand>
                 <h3>
                   <Link to='/' className='text-white mt-2'>
-                    <img
-                      width={200}
-                      src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713680477/tlipstick-high-resolution-logo-transparent_1_xbdy4q.png'
-                    ></img>
+                    <img width={300} src={logo} alt="Logo" />
                   </Link>
                 </h3>
               </Navbar.Brand>
@@ -72,27 +70,27 @@ const Header = () => {
                 <div style={{ marginRight: '140px' }}>
                   <SearchBox />
                 </div>
-                <Nav className='d-flex align-items-center me-2'>
+                <Nav className='d-flex align-items-center me-2 text-black'>
                   <LinkContainer to='/cart'>
-                    <Nav.Link>
-                      <FaShoppingCart style={{ fontSize: '1.5em' }} className='me-1' /> Giỏ Hàng
+                    <Nav.Link style={{ color: 'black' }}>
+                      <FaShoppingCart style={{ fontSize: '1.5em' }} className='me-1 text-black' /> Giỏ Hàng
                       {cartItems.length > 0 && (
-                        <Badge pill bg='danger' style={{ marginLeft: '5px', fontSize:"12px" }}>
+                        <Badge pill bg='danger' style={{ marginLeft: '5px', fontSize: '12px' }}>
                           {cartItems.reduce((a, c) => a + c.qty, 0)}
-                          
                         </Badge>
                       )}
                     </Nav.Link>
+
                   </LinkContainer>
                 </Nav>
 
                 {userInfo ? (
                   <>
-                    <Nav className='d-flex align-items-center justify-content-end flex-grow-1'>
+                    <Nav className='d-flex align-items-center justify-content-end flex-grow-1 text-black'>
                       <NavDropdown
                         title={
                           <>
-                            <FaUser style={{ fontSize: '1.3em' }} className='me-1'/>
+                            <FaUser style={{ fontSize: '1.3em' }} className='me-1 text-black' />
                             {userInfo.name}
                           </>
                         }
@@ -108,7 +106,7 @@ const Header = () => {
                     </Nav>
                   </>
                 ) : (
-                  <LinkContainer to='/login' style={{marginTop: "3px"}}>
+                  <LinkContainer to='/login' style={{ marginTop: "3px" }}>
                     <Nav.Link >
                       <FaUser style={{ fontSize: '1.3em' }} className='me-1' /> Đăng nhập
                     </Nav.Link>

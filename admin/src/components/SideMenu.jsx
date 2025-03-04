@@ -57,7 +57,7 @@ function SideMenu() {
         >
           <div className='logo'>
             <h4 className='text-white fs-5 text-center py-3 mb-0'>
-              <span className='lg-logo'>TLIPSTICK</span>
+              <span className='lg-logo'>Khỏe Handmade </span>
             </h4>
           </div>
           <Menu.Item key='/' icon={<DashboardOutlined />} className='my-3'>

@@ -80,7 +80,7 @@ table th {
   --color-1c1c1b: #1c1c1b;
   --color-872341: #872341;
   --color-F4BF96: #f4bf96;
-  --color-CE5A67: #ce5a67;
+  --color-CE5A67: #f9a92e;
 }
 
 .error {
@@ -106,6 +106,9 @@ table th {
   font-size: 12px;
   padding: 5px;
   border-radius: 5px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-heading {
@@ -151,7 +154,7 @@ a {
 }
 
 .button {
-  background-color: black;
+  background-color: #fcb244;
   color: white;
   font-size: 14px;
   padding: 10px 30px;
@@ -181,12 +184,18 @@ a {
 /* Header Part */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
-  background-color: black;
+  background-color: #f3e5db ;
 }
 
 .header-upper {
-  background-color: black;
+  background-color: #f3e5db ;
   height: 100px;
+}
+nav-link{
+  color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: black;
 }
 .header-upper .input-group-text {
   background-color: var(--color-CE5A67);
@@ -206,9 +215,12 @@ a {
   color: white;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 0.3;
   text-transform: uppercase;
+}
+.text-black{
+  color: black!important;
 }
 
 .header-bottom .dropdown button:focus {
@@ -1082,7 +1094,7 @@ footer .input-group-text {
 
 .icon-container:hover {
   /* Định nghĩa màu khi hover */
-  color:  rgb(95, 29, 40);
+  color: #f9a92e;
 }
 
 .breadcrumb {
@@ -1250,7 +1262,7 @@ footer .input-group-text {
 
 .details {
   background-color: rgb(244, 205, 205) !important;
-  color: rgb(95, 29, 40) !important; /* Đổi màu chữ nếu cần */
+  color: #f9a92e !important; /* Đổi màu chữ nếu cần */
 }
 
 .form-control:disabled {

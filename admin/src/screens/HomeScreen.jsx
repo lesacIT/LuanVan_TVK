@@ -174,7 +174,7 @@ const HomeScreen = () => {
                   type='date'
                   value={startDate}
                   onChange={handleChangeStart}
-                  style={{ borderColor: 'rgb(95, 29, 40)' }}
+                  style={{ borderColor: '#f9a92e' }}
                 />
               </Form.Group>
             </Col>
@@ -185,7 +185,7 @@ const HomeScreen = () => {
                   type='date'
                   value={endDate}
                   onChange={handleChangeEnd}
-                  style={{ borderColor: 'rgb(95, 29, 40)' }}
+                  style={{ borderColor: '#f9a92e' }}
                 />
               </Form.Group>
             </Col>
