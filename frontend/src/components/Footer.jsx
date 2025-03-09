@@ -1,6 +1,6 @@
 import React from "react";
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { BsFacebook, BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
 
 const Footer = () => {
@@ -38,12 +38,12 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto">
-              <h5 className="text-uppercase fw-bold text-white">Khỏe Handmade </h5>
+              <h5 className="text-uppercase fw-bold text-white"> Tiệm Len BabyBoo </h5>
               <hr />
               <p className="text-white">
-                Mang đến cho bạn những thỏi son xinh đẹp, chất lượng với giá
-                thành tốt nhất là tiêu chí hàng đầu của chúng tôi.
+                Cung cấp len chất lượng cao với màu sắc đa dạng, giúp bạn thỏa sức sáng tạo trong từng mũi đan, mũi móc.
               </p>
+
             </div>
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h5 className="text-white mb-4 text-uppercase">Tài Khoản</h5>
@@ -95,7 +95,7 @@ const Footer = () => {
                   href="mailto:ttech@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
-                  KhoeHandmade@gmail.com
+                  BabyBoo@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
                   <a className="text-white" href="/">

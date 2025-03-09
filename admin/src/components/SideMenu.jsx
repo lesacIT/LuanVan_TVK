@@ -1,23 +1,19 @@
-import { Menu } from 'antd';
 import {
   DashboardOutlined,
-  ShopOutlined,
-  BoldOutlined,
-  ProductOutlined,
-  SolutionOutlined,
-  UserOutlined,
-  LogoutOutlined,
   EditOutlined,
-  ProfileOutlined,
+  LogoutOutlined,
+  ShopOutlined,
+  SolutionOutlined,
+  UserOutlined
 } from '@ant-design/icons';
-import { BiSolidColor } from 'react-icons/bi';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Menu } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { LuMailQuestion } from 'react-icons/lu';
 import { useDispatch } from 'react-redux';
-import { useLogoutMutation } from '../slices/usersApiSlice';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { logout } from '../slices/authSlice';
 import { resetCart } from '../slices/cartSlice';
-import React, { useState, useEffect } from 'react';
-import { LuMailQuestion } from 'react-icons/lu';
+import { useLogoutMutation } from '../slices/usersApiSlice';
 
 const { SubMenu } = Menu;
 
@@ -57,7 +53,7 @@ function SideMenu() {
         >
           <div className='logo'>
             <h4 className='text-white fs-5 text-center py-3 mb-0'>
-              <span className='lg-logo'>Khỏe Handmade </span>
+              <span className='lg-logo'>BabyBoo </span>
             </h4>
           </div>
           <Menu.Item key='/' icon={<DashboardOutlined />} className='my-3'>
