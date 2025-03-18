@@ -9,7 +9,6 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <>
       <Meta title={'Giới Thiệu - Tiệm Len Babyboo'} />
@@ -32,20 +31,18 @@ const About = () => {
                 className='col-lg-6 col-md-7 wow fadeInUp'
                 data-wow-delay='0.3s'
               >
-                <h4 className='display-4 mb-0 color text-black'>100% Handmade</h4>
+
                 <p className='color mb-4 '>
                   Chuyên cung cấp len và sản phẩm thủ công chất lượng cao
                 </p>
+
                 <h1 className='display-5 mb-4 text-black'>
                   TIỆM LEN BABYBOO - ĐAM MÊ LEN SỢI
                 </h1>
                 <p className='mb-4'>
-                  Tiệm Len Babyboo mang đến cho bạn những cuộn len chất lượng từ cotton, wool, đến acrylic, phục vụ cho đam mê đan móc của bạn.
-                </p>
-                <p className='mb-4'>
                   Chúng tôi cam kết cung cấp len an toàn, màu sắc đa dạng, phù hợp với mọi nhu cầu từ đan áo, làm thú bông, đến các dự án handmade độc đáo.
                 </p>
-                <Link to='/products'>
+                <Link to='/store'>
                   <button className='button'>Khám phá ngay</button>
                 </Link>
               </div>

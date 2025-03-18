@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import Meta from '../components/Meta';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
-import { BiPhoneCall, BiInfoCircle } from 'react-icons/bi';
+import { BiInfoCircle, BiPhoneCall } from 'react-icons/bi';
+import { IoArrowBack } from 'react-icons/io5';
+import { useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import * as Yup from 'yup';
+import BreadCrumb from '../components/BreadCrumb';
 import Container from '../components/Container';
 import CustomInput from '../components/CustomInput';
-import { IoArrowBack } from 'react-icons/io5';
-import BreadCrumb from '../components/BreadCrumb';
-import { Link, useNavigate } from 'react-router-dom';
+import Meta from '../components/Meta';
 import { useCreateEnquiryMutation } from '../slices/enquiriesSlice';
-import { toast } from 'react-toastify';
-import { useSelector } from 'react-redux';
-import * as Yup from 'yup';
 
 const contactSchema = Yup.object().shape({
   name: Yup.string().required('Vui lòng nhập tên').min(4, 'Tên phải có ít nhất 4 ký tự'),
@@ -180,11 +180,11 @@ const Contact = () => {
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <BiPhoneCall className='fs-5' />
-                      <a href='tel:+84 946053795'>+84 946053795</a>
+                      <a href='tel:+84 946053795'>+84 12345678</a>
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <AiOutlineMail className='fs-5' />
-                      <a href='mailto:ttech@gmail.com'>tlipstick@gmail.com</a>
+                      <a href='mailto:BabyBoo@gmail.com'>BabyBoo@gmail.com</a>
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <BiInfoCircle className='fs-5' />

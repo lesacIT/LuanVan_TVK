@@ -13,7 +13,10 @@ import Marquee from 'react-fast-marquee';
 import Container from '../components/Container';
 import Meta from '../components/Meta';
 import img1 from '../images/banner.png';
-import img2 from '../images/img2.png';
+import img2 from '../images/banner2.png';
+import BannerImage from '../images/banner3.png';
+import BannerImage5 from '../images/banner4.png';
+import SliderImage from '../images/Slider.png';
 import { services } from '../utils/Data';
 const HomeScreen = () => {
   useEffect(() => {
@@ -46,24 +49,25 @@ const HomeScreen = () => {
       <Meta title={'Trang Chủ'} />
       <Container class1='home-wrapper-1 pb-4 pt-3'>
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-12'>
             <div className='main-banner position-relative'>
               <img
-                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104746/main-banner-1_twci07.jpg'
+                src={SliderImage}
                 className='img-fluid rounded-3'
                 alt='main banner'
               />
-              <div className='main-banner-content position-absolute'>
+
+              {/* <div className='main-banner-content position-absolute'>
                 <h4>ĐA DẠNG SẢN PHẨM</h4>
                 <h5>Giá Thành Hợp Lý</h5>
                 <p>Đừng bỏ lỡ các sản phẩm của chúng tôi</p>
                 <Link to='/store'>
                   <button className='button'>XEM NGAY</button>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className='col-6'>
+          {/* <div className='col-6'>
             <div className='d-flex flex-wrap gap-10 justify-content-between align items-center'>
               <div className='small-banner position-relative'>
                 <img
@@ -120,7 +124,7 @@ const HomeScreen = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
       <Container class1='home-wrapper-2 py-5'>
@@ -268,29 +272,29 @@ const HomeScreen = () => {
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104727/famous-03_cpd3tr.jpg'
+                src={BannerImage}  // Use the imported image
                 className='img-fluid'
                 alt='famous'
               />
-              <div className='famous-content position-absolute'>
+              {/* <div className='famous-content position-absolute'>
                 <h5 className='text-black'>Đa dạng màu sắc</h5>
                 <h6 className='text-black'>Thể Hiện Chất Riêng</h6>
                 <p className='text-black'>Cho bạn nhiều lựa chọn</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-3'>
             <div className='famous-card position-relative'>
               <img
-                src='https://res.cloudinary.com/dugpxqp6x/image/upload/v1713104729/famous-04_lazymg.jpg'
+                src={BannerImage5}  // Use the imported image
                 className='img-fluid'
                 alt='famous'
               />
-              <div className='famous-content position-absolute'>
+              {/* <div className='famous-content position-absolute'>
                 <h5 className='text-black'>Mua ngay hôm nay</h5>
                 <h6 className='text-black'>Chất Son Khác Nhau</h6>
                 <p className='text-black'>Mang nhiều màu sắc</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

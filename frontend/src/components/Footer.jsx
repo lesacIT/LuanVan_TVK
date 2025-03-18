@@ -82,17 +82,17 @@ const Footer = () => {
               </h5>
               <div>
                 <address className="text-white fs-6 py-3">
-                  Địa chỉ: Đường 3/2, Phường Xuân Khánh, <br /> Quận Ninh Kiều,
+                  Địa chỉ: Đường 3/2,Xuân Khánh, <br /> Quận Ninh Kiều,
                   Thành Phố Cần Thơ
                 </address>
                 <a
                   href="tel:+84 946053795"
                   className="mt-3 d-block mb-1 text-white"
                 >
-                  +84 946053795
+                  +84 12345678
                 </a>
                 <a
-                  href="mailto:ttech@gmail.com"
+                  href="mailto:babyboo@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
                   BabyBoo@gmail.com
