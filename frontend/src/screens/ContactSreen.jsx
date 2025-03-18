@@ -180,7 +180,7 @@ const Contact = () => {
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <BiPhoneCall className='fs-5' />
-                      <a href='tel:+84 946053795'>+84 12345678</a>
+                      <a href='tel:+84 12345678'>+84 12345678</a>
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <AiOutlineMail className='fs-5' />

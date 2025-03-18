@@ -86,7 +86,7 @@ const Footer = () => {
                   Thành Phố Cần Thơ
                 </address>
                 <a
-                  href="tel:+84 946053795"
+                  href="tel:+84 12345678"
                   className="mt-3 d-block mb-1 text-white"
                 >
                   +84 12345678

@@ -64,8 +64,8 @@ const RefundPolicy = () => {
                 <p>
                   Nếu bạn có bất kỳ câu hỏi hoặc ý kiến nào về chính sách hoàn
                   trả của chúng tôi, vui lòng liên hệ với chúng tôi qua địa chỉ
-                  email: <a href="mailto:your@email.com">tlipstick@email.com</a>{" "}
-                  hoặc số hotline: <a href="tel:+123456789">+84 946053795</a>.
+                  email: <a href="mailto:your@email.com">Babyboo@email.com</a>{" "}
+                  hoặc số hotline: <a href="tel:+123456789">+84 12345678</a>.
                 </p>
 
                 <p>Cảm ơn bạn đã chọn chúng tôi!</p>

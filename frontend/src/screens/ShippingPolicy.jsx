@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
 import { IoArrowBack } from 'react-icons/io5';
 import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
+import Container from "../components/Container";
+import Meta from "../components/Meta";
 
 const ShippingPolicy = () => {
   useEffect(() => {
@@ -56,8 +56,8 @@ const ShippingPolicy = () => {
                   4.1. Bạn có thể theo dõi trạng thái đơn hàng của mình bằng
                   cách đăng nhập vào tài khoản của mình trên trang web hoặc vui
                   lòng liên hệ với chúng tôi qua địa chỉ email:{" "}
-                  <a href="mailto:your@email.com">tlipstick@email.com</a> hoặc
-                  số hotline: <a href="tel:+123456789">+84 946053795</a>.
+                  <a href="mailto:your@email.com">Babyboo@email.com</a> hoặc
+                  số hotline: <a href="tel:+123456789">+84 12345678</a>.
                 </p>
 
                 <p>
@@ -67,8 +67,8 @@ const ShippingPolicy = () => {
                   Nếu bạn có bất kỳ câu hỏi hoặc ý kiến nào về chính sách vận
                   chuyển của chúng tôi, vui lòng liên hệ với chúng tôi qua địa
                   chỉ email:{" "}
-                  <a href="mailto:your@email.com">tlipstick@email.com</a> hoặc
-                  số hotline: <a href="tel:+123456789">+84 946053795</a>.
+                  <a href="mailto:your@email.com">BabyBoo@email.com</a> hoặc
+                  số hotline: <a href="tel:+123456789">+84 12345678</a>.
                 </p>
 
                 <p>Cảm ơn bạn đã chọn chúng tôi!</p>

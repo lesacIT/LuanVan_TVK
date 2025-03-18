@@ -67,8 +67,8 @@ const TermAndConditions = () => {
                   5.1. Nếu bạn có bất kỳ câu hỏi hoặc ý kiến nào về điều khoản
                   và điều kiện của chúng tôi, vui lòng liên hệ với chúng tôi qua
                   địa chỉ email:{" "}
-                  <a href="mailto:your@email.com">tlipstick@email.com</a> hoặc
-                  số hotline: <a href="tel:+123456789">+84 946053795</a>.
+                  <a href="mailto:your@email.com"><Babyboo></Babyboo>@email.com</a> hoặc
+                  số hotline: <a href="tel:+123456789">+ 84 12345678</a>.
                 </p>
 
                 <p>
