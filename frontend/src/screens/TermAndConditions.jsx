@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
-import { Link } from "react-router-dom";
 import { IoArrowBack } from 'react-icons/io5';
+import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
+import Container from "../components/Container";
+import Meta from "../components/Meta";
 
 const TermAndConditions = () => {
   useEffect(() => {
@@ -67,7 +67,7 @@ const TermAndConditions = () => {
                   5.1. Nếu bạn có bất kỳ câu hỏi hoặc ý kiến nào về điều khoản
                   và điều kiện của chúng tôi, vui lòng liên hệ với chúng tôi qua
                   địa chỉ email:{" "}
-                  <a href="mailto:your@email.com"><Babyboo></Babyboo>@email.com</a> hoặc
+                  <a href="mailto:your@email.com">Babyboo@email.com</a> hoặc
                   số hotline: <a href="tel:+123456789">+ 84 12345678</a>.
                 </p>
 
