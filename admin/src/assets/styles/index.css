@@ -1237,7 +1237,7 @@ td:hover {
 
 .totalOrdTime {
   background-color: rgb(244, 205, 205);
-  color: #f9a92e!important;
+  color:black#f9a92e!important;
   border-radius: 10px;
 }
 
@@ -1249,7 +1249,7 @@ td:hover {
 
 .totalRevenueTime {
   background-color: rgb(244, 205, 205);
-  color: #f9a92e!important;
+  color: black!important;
   border-radius: 10px;
 }
 
